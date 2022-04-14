@@ -8,8 +8,11 @@
 
 void test_all();
 void test_constructor1();
-void test_setter();
-void test_getter();
+void test_constructor2();
+void test_setter_getter();
 void testRepo();
+void testDelete();
+void testModify();
+void testService();
 
 #endif //LAB07_TESTS_H

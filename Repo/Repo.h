@@ -20,6 +20,10 @@ public:
     Entity getEntityFromPosition(int pos);
     int getSize();
     vector <Entity> getAll();
+    void deleteEntity(int id);
+    void modifyEntity(Entity &oldEntity, Entity &newEntity);
+    Entity getEntityById(int i);
+    Repo & operator=(const Repo &repo);
 };
 
 

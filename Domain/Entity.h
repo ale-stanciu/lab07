@@ -10,20 +10,24 @@ class Entity {
 private:
     int nr_apartments;
     int sum;
+    int id;
     char* type;
 
 public:
     Entity();
-    Entity(char* t, int s, int nr);
+    Entity(int id, const char* t, int s, int nr);
     Entity(const Entity &e);
     char* getType();
     int getSum();
     int getNrApartments();
-    void setType(char *t);
+    void setType(const char *t);
     void setSum(int s);
     void setNrApartments(int nr);
     Entity& operator=(const Entity &e);
     bool operator==(const Entity &e);
+    bool isValid();
+    int getId();
+    void setId(int id);
     ~Entity();
 };
 
